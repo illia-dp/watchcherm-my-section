@@ -38,8 +38,16 @@
     font-style: normal;
 }
 
-
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
 
 img {
     max-width: 100%;
@@ -53,9 +61,8 @@ img {
     margin: 0 auto;
 }
 
-/* .contact-section {
-    padding: 0 28px;
-} */
+
+/* Main CSS */
 
 .contact-title {
     font-family: var(--font-family);
@@ -71,18 +78,21 @@ img {
     min-width: 100%;
 }
 
+.contact-form {
+    margin-bottom: 28px;
+}
+
 .contact-form-container {
     border-radius: 30px;
     padding: 48px 28px;
+    min-height: 416px;
     background-color: var(--cards);
     margin-bottom: 20px;
 }
 
 .contact-form-wrapper {
     max-width: 100%;
-    min-height: 416px;
-    margin-bottom: 20px;
-    margin: 0 auto;
+    margin: 0 auto 28px;
 }
 
 .contact-form-container-text {
@@ -132,7 +142,6 @@ img {
     resize: none;
     outline: transparent;
     background-color: transparent;
-    margin-bottom: 28px;
 }
 
 .contact-user-comment::placeholder {
@@ -185,14 +194,6 @@ img {
         padding: 0 32px;
     }
 
-    .contact-form-container-text {
-        font-size: 16px;
-    }
-
-    .contact-user-comment::placeholder {
-        font-size: 16px;
-    }
-
     .contact-title {
         font-size: 48px;
         line-height: 0.92;
@@ -202,6 +203,37 @@ img {
         max-width: 704px;
         padding: 50px 122px;
         margin-bottom: 40px;
+    }
+
+    .contact-form-container-text {
+        margin-bottom: 32px;
+        line-height: 1.25;
+        font-size: 16px;
+    }
+
+    .contact-form-input {
+        padding: 16px 18px;
+        height: 52px;
+    }
+
+    .contact-form-input::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+    .contact-user-comment {
+        height: 90px;
+        padding: 16px;
+    }
+
+    .contact-user-comment::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+    .contact-send-btn {
+        min-width: 160px;
+        height: 54px;
     }
 
     .contact-picture {
